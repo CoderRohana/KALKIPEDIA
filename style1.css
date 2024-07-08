@@ -1,0 +1,123 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 15px 30px;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.header .logo i {
+    margin-right: 8px;
+}
+
+.navbar {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #FFD700; /* Gold color on hover */
+}
+
+#menu {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .navbar {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        right: 30px;
+        width: 200px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar a {
+        padding: 10px;
+        border-bottom: 1px solid #444;
+    }
+
+    .navbar a:last-child {
+        border-bottom: none;
+    }
+
+    #menu {
+        display: block;
+    }
+
+    #menu.active + .navbar {
+        display: flex;
+    }
+}
+section {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.home .content {
+    text-align: center;
+}
+.classification .content{
+    text-align: center;
+}
+.download .content{
+    text-align: center;
+}
+.download {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.download .content {
+    text-align: center;
+}
+
+.download h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.pdf-link {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.pdf-link:hover {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
